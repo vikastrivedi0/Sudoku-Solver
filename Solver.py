@@ -70,5 +70,8 @@ def solve(bo):
 
     return False
 
-solve(board)
-showBoard(board)
+ans=solve(board)
+if ans:
+    showBoard(board)
+else:
+    print('Please Check the question again. It might be Wrong!')
