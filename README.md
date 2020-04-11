@@ -16,6 +16,7 @@ Step-by-Step Solution:
     While on a console, the empty spaces on a board can be identified as '0'. A function to find such empty spaces can easily be          
     written.
     
+    #Finding Empty Positions
     def findEmpty(bo):
     for i in range(len(bo)):
         for j in range(len(bo[0])):
@@ -55,6 +56,7 @@ Step-by-Step Solution:
 3. To recursively solve the board, we can call the above functions in our solve function, which will call iteself recursively
    until a correct solution for all the positions in the board is found.
    
+   #Finding correct values for empty positions on the board
    def solve(bo):
     find=findEmpty(bo)
     if not find:
@@ -71,6 +73,7 @@ Step-by-Step Solution:
     
 4.  The final step to our solution is to show the board with the correct solution.
     
+    #Board Display
     def showBoard(bo):
     for i in range(len(bo)):
         if i%3==0 and i!=0:
